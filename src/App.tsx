@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Tweet } from "./components/tweet";
 
+import'./App.css';
+
   function App() {
     const [tweets, setTweet] = useState<string[]>([
       'Tweet 1',
@@ -19,7 +21,8 @@ import { Tweet } from "./components/tweet";
           return <Tweet text={tweet} />
         })}
 
-        <button onClick={createTweet}>Adicionar tweet</button>
+        <button 
+        onClick={createTweet}>Adicionar tweet</button>
     </div>
     );
   }
